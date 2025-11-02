@@ -1,0 +1,15 @@
+[
+    {
+        "uri": "file:///media/tuhedul/SIMEC%20Web/React/my-app/src/main.jsx",
+        "range": {
+            "start": {
+                "line": 2,
+                "character": 0
+            },
+            "end": {
+                "line": 2,
+                "character": 6
+            }
+        }
+    }
+]

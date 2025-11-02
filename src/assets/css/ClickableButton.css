@@ -1,0 +1,16 @@
+.para{
+    background-color: blue;
+    color: white;
+}
+
+.card{
+    border: 2px solid black;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+.box{
+    background-color: rgb(151, 74, 74);
+    margin-top: 20px;
+}
