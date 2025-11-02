@@ -2,6 +2,7 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import ClickableButton from './components/ClickableButton.jsx'
+import JsonComponent from './components/jsonComponent.jsx';
 import LoopOfCart from './components/LoopOfCart.jsx';
 import SimpleArr from './components/SimpleArr.jsx';
 
@@ -29,6 +30,9 @@ function App() {
 
       {/* Render TestFile components from the array */}
       <LoopOfCart />
+
+      {/* Render JsonComponent to display JSON data */}
+      <JsonComponent />
 
     </>
   )
