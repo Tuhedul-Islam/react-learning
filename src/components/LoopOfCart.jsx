@@ -17,7 +17,6 @@ function LoopOfCart() {
 
     return (
         <>
-
             <div>
                 {testFiles}
             </div>
@@ -29,7 +28,6 @@ function LoopOfCart() {
             ) : (
                 <p>cardDetails must be an object</p>
             )}
-
         </>
     );
 }
