@@ -1,10 +1,12 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
+import TestClassComponent from './ClassComponents/TestClassComponent.jsx';
 import ClickableButton from './components/ClickableButton.jsx'
 import JsonComponent from './components/jsonComponent.jsx';
 import LoopOfCart from './components/LoopOfCart.jsx';
 import SimpleArr from './components/SimpleArr.jsx';
+import ReactBootstrap from './components/ReactBootstrap.jsx';
 
 function App() {
 
@@ -33,6 +35,12 @@ function App() {
 
       {/* Render JsonComponent to display JSON data */}
       <JsonComponent />
+
+      {/* class Component */}
+      <TestClassComponent header={"This is a Class Component"} />
+
+      {/* React Bootstrap Component */}
+      <ReactBootstrap />
 
     </>
   )
