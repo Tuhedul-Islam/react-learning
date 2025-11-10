@@ -14,3 +14,34 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
+## Learning Text
+- In class component's render() method,
+1. arrow func & regular func can be written.
+2. Function can be defined inside/outside of the render() method
+Like --details in 'StateDetails' class component,
+
+render(){
+    const displayState1 = () => {
+        return (
+            `DisplayState1 --- Username: ${this.state.username}, Age: ${age}, Location: ${location}`
+        );
+    }
+    //Regular function defined inside render method // 'this' keyword is not used here
+    function displayState2() {
+        return (
+            `DisplayState2 --- Username: ${username}, Age: ${age}, Location: ${location}`
+        );
+    }
+
+    return(...);
+}
+
+3. In outside of the render() method, no need const/function keyword to define func.
+4. Regular function defined inside the render() method --- where 'this' keyword is not workable but can be workable by binding the 'this' keyword in constrauctor.
+
+
+- In Functional component's
+1. Function can be written inside/outside of the component return()

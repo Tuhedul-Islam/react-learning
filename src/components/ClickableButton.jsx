@@ -13,6 +13,17 @@ const styleFaIcon = {
     },
 };
 
+//Can be defined inside/outside of the component as a normal function component
+function ButtonLevel() {
+    return (
+        <p>Count is </p>
+    );
+}
+
+const ButtonText = () => {
+    return "Click Me";
+};
+
 function ClickableButton({ title, label }) {
     const [count, setCount] = useState(0);
 
@@ -27,7 +38,8 @@ function ClickableButton({ title, label }) {
                     <span style={styleFaIcon.BsCircleSquare}>
                         <BsCircleSquare />
                     </span>
-                    {label || "Count is"} {count}
+                    {label || <ButtonLevel/>} {count}
+                    <ButtonText />
                 </button>
             </div>
         </>

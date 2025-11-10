@@ -7,6 +7,7 @@ import JsonComponent from './components/jsonComponent.jsx';
 import LoopOfCart from './components/LoopOfCart.jsx';
 import SimpleArr from './components/SimpleArr.jsx';
 import ReactBootstrap from './components/ReactBootstrap.jsx';
+import StateDetails from './ClassComponents/StateDetails.jsx';
 
 function App() {
 
@@ -41,6 +42,9 @@ function App() {
 
       {/* React Bootstrap Component */}
       <ReactBootstrap />
+
+      {/* StateDetails Component */}
+      { <StateDetails /> }
 
     </>
   )
