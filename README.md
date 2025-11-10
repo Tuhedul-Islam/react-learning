@@ -27,6 +27,7 @@ Like --details in 'StateDetails' class component,
 
 - Example:-
 ```jsx
+- In Class component
 -------------------------------------------------------------------------------------;
 import...
 
@@ -53,9 +54,7 @@ class componentClass extends Component{
 -------------------------------------------------------------------------------------;
 
 
-- In Functional component's
-1. Function can be written inside/outside of the component return()
-Example:-
+- In Functional component
 -------------------------------------------------------------------------------------;
 import...
 
