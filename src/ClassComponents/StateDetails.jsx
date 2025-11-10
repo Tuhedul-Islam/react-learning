@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
 import { Button } from 'react-bootstrap';
 
+function DisplayState() {
+    return (
+        <p>This is displayState function defined outside the class component.</p>
+    );
+}
+
 class StateDetails extends Component {
 
     constructor(props) {
@@ -62,22 +68,25 @@ class StateDetails extends Component {
         }
 
         return (
-        <div className="card" style={{ padding: '20px', margin: '20px' }}>
-            <h2>User Details</h2>
-            <p>Username: {username}</p>
-            <p>Age: {age}</p>
-            <p>Location: {location}</p>
-            
             <div className="card" style={{ padding: '20px', margin: '20px' }}>
-                //Functions called from class method
-                <p>{this.getDetails()}</p>
-                <p>{displayState1()}</p>
-                <p>{displayState2()}</p>
-            </div>
+                <h2>User Details</h2>
+                <p>Username: {username}</p>
+                <p>Age: {age}</p>
+                <p>Location: {location}</p>
+                
+                <div className="card" style={{ padding: '20px', margin: '20px' }}>
+                    //Functions called from class method
+                    <p>{this.getDetails()}</p>
+                    <p>{displayState1()}</p>
+                    <p>{displayState2()}</p>
+                </div>
 
-            <Button onClick={changeState}>Change State</Button>
-            <Button style={{marginTop:'5px'}} onClick={backState}>Back State</Button>
-        </div>
+                <Button onClick={changeState}>Change State</Button>
+                <Button style={{marginTop:'5px'}} onClick={backState}>Back State</Button>
+
+                //Function component called inside class component
+                <DisplayState />
+            </div>
         )
     }
 }

@@ -41,7 +41,54 @@ render(){
 
 3. In outside of the render() method, no need const/function keyword to define func.
 4. Regular function defined inside the render() method --- where 'this' keyword is not workable but can be workable by binding the 'this' keyword in constrauctor.
+Example:-
+
+-------------------------------------------------------------------------------------;
+import...
+
+//components
+function DisplayState(){...}  //call as component '<DisplayState />'
+const DisplayState1 = () => {...}  //call as component '<DisplayState1 />'
+
+class componentClass extends Component{
+    _props = this.props
+    //Func //State is defined in constructor  
+    constructor(){} //call by 'this' keyword
+    display(){}     //call by 'this' keyword
+    ...
+    render(){
+        //Func // 'this' keyword is not workable inside these func
+        const display1 = () => {} //No need 'this' keyword to call
+        function display2(){}     //No need 'this' keyword to call
+        ...
+        return(
+            {jsx}, <></>
+        );
+    }
+}
+-------------------------------------------------------------------------------------;
+
 
 
 - In Functional component's
 1. Function can be written inside/outside of the component return()
+Example:-
+
+-------------------------------------------------------------------------------------;
+import...
+
+//components
+function DisplayState(){...}  //call as component '<DisplayState />'
+const DisplayState1 = () => {...}  //call as component '<DisplayState1 />'
+
+function componentFunction({props}){
+    const [count, setCount] = useState(0);
+    //Func
+    const display1 = () => {} //No need 'this' keyword to call
+    function display2(){}     //No need 'this' keyword to call
+    ...
+    return(
+        {jsx}, <></>
+    );
+}
+-------------------------------------------------------------------------------------;
