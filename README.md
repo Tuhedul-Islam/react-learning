@@ -24,9 +24,10 @@ If you are developing a production application, we recommend using TypeScript wi
 Like --details in 'StateDetails' class component,
 3. In outside of the render() method, no need const/function keyword to define func.
 4. Regular function defined inside the render() method --- where 'this' keyword is not workable but can be workable by binding the 'this' keyword in constrauctor.
-Example:-
--------------------------------------------------------------------------------------;
+
+- Example:-
 ```jsx
+-------------------------------------------------------------------------------------;
 import...
 
 //components
@@ -50,6 +51,7 @@ class componentClass extends Component{
     }
 }
 -------------------------------------------------------------------------------------;
+
 
 - In Functional component's
 1. Function can be written inside/outside of the component return()
