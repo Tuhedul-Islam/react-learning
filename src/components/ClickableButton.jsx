@@ -27,12 +27,22 @@ const ButtonText = () => {
 function ClickableButton({ title, label }) {
     const [count, setCount] = useState(0);
 
+    function handleClick() {
+        setCount(count + 1);
+    }
+
     return (
         <>  
             <div className="card">
                 <button 
                     title={title}
-                    onClick={() => setCount((count) => count + 1)}
+                    onClick={
+                        handleClick
+                        // An alternative way using arrow function
+                        // () => setCount(
+                        //     (count) => count + 1
+                        // )
+                    }
                 >
                     <strong>Icon :</strong>
                     <span style={styleFaIcon.BsCircleSquare}>

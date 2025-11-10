@@ -79,3 +79,21 @@ function componentFunction({props}){
 }
 -------------------------------------------------------------------------------------;
 ```
+
+
+```jsx
+- Another Important thing about setState in Class Component
+- After change on a input field,
+
+handleOnChange = (e) => {
+    this.setState(
+        {
+            changeVal : e.target.value
+        }, 
+        //Here Used callback func to show updated value - important callback func
+        () => {
+            console.log(this.state.changeVal)
+        }
+    )
+}
+```
