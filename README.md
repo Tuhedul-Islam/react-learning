@@ -22,27 +22,9 @@ If you are developing a production application, we recommend using TypeScript wi
 1. arrow func & regular func can be written.
 2. Function can be defined inside/outside of the render() method
 Like --details in 'StateDetails' class component,
-
-render(){
-    const displayState1 = () => {
-        return (
-            `DisplayState1 --- Username: ${this.state.username}, Age: ${age}, Location: ${location}`
-        );
-    }
-    //Regular function defined inside render method // 'this' keyword is not used here
-    function displayState2() {
-        return (
-            `DisplayState2 --- Username: ${username}, Age: ${age}, Location: ${location}`
-        );
-    }
-
-    return(...);
-}
-
 3. In outside of the render() method, no need const/function keyword to define func.
 4. Regular function defined inside the render() method --- where 'this' keyword is not workable but can be workable by binding the 'this' keyword in constrauctor.
 Example:-
-
 -------------------------------------------------------------------------------------;
 ```jsx
 import...
@@ -69,12 +51,9 @@ class componentClass extends Component{
 }
 -------------------------------------------------------------------------------------;
 
-
-
 - In Functional component's
 1. Function can be written inside/outside of the component return()
 Example:-
-
 -------------------------------------------------------------------------------------;
 import...
 
