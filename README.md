@@ -97,3 +97,7 @@ handleOnChange = (e) => {
     )
 }
 ```
+
+- reack hook - useState()
+- event bubleing (if you call child element, it also call parent element).
+- it can be stopped by 'e.stopPropagation()' 

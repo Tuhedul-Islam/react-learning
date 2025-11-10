@@ -17,7 +17,19 @@ class StateDetails extends Component {
         age: 25,
         location: 'Dhaka'
         }
+
+        // Binding 'this' keyword for regular function defined in class component
+        //this.backState = this.backState.bind(this);
     }
+
+    // use this way in constructor - this.backState = this.backState.bind(this);
+    // backState() {
+    //     this.setState({
+    //     username: 'Guest',
+    //     age: 25,
+    //     location: 'Dhaka'
+    //     });
+    // }
 
     getDetails = () => {
         return `Username: ${this.state.username}, Age: ${this.state.age}, Location: ${this.state.location}`;
@@ -43,7 +55,8 @@ class StateDetails extends Component {
         };
 
         //This is the other way to define function in class component
-        //But this way we have to bind 'this' keyword in the constructor otherwise it will give error
+        //But this way we have to bind 'this' keyword in the constructor or button otherwise it will give error.
+        // like - onClick={backState.bind(this)}
         // function backState() {
         //   this.setState({
         //     username: 'Guest',
