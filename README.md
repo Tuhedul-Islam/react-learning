@@ -36,9 +36,14 @@ function DisplayState(){...}  //call as component '<DisplayState />'
 const DisplayState1 = () => {...}  //call as component '<DisplayState1 />'
 
 class componentClass extends Component{
-    _props = this.props
+    const _props = this.props;
     //Func //State is defined in constructor  
-    constructor(){} //call by 'this' keyword
+    constructor(props){
+        super(props)
+        this.state = {
+            count: '0',
+        }
+    }
     display(){}     //call by 'this' keyword
     ...
     render(){
@@ -73,3 +78,4 @@ function componentFunction({props}){
     );
 }
 -------------------------------------------------------------------------------------;
+```
