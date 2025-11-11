@@ -8,6 +8,8 @@ import LoopOfCart from './components/LoopOfCart.jsx';
 import SimpleArr from './components/SimpleArr.jsx';
 import ReactBootstrap from './components/ReactBootstrap.jsx';
 import StateDetails from './ClassComponents/StateDetails.jsx';
+import Form from './components/Form.jsx';
+import GetChildDataStateLifting from './components/GetChildDataStateLifting.jsx';
 
 function App() {
 
@@ -22,11 +24,18 @@ function App() {
     },
   ];
 
+  const getDataFromChild = (childData) => {
+    console.log(childData);
+  }
+
 
   return (
     <>
       {/* Render ClickableButton component */}
       <ClickableButton title="Clickable Button" label="Count is" />
+
+      {/* Form component is render here */}
+      <Form />
 
       {/* Render SimpleArr component */}
       <SimpleArr arr={sampleArr} />
@@ -45,6 +54,9 @@ function App() {
 
       {/* StateDetails Component */}
       { <StateDetails /> }
+
+      {/* GetChildData component is render here */}
+      <GetChildDataStateLifting data={"Data from Parent Component"} getDataFromChild={getDataFromChild} />
 
     </>
   )
